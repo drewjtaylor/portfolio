@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A stylish introduction to the portfolio projects of Andrew Taylor",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copyfiles && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/webfonts && copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/webfonts",
+    "copyfiles": "copyfiles That-Man-Called-Jesus.pdf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "lite": "lite-server",
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin meetingtimes.html -d dist --htmlmin -o dist/meetingtimes.html && usemin ourmission.html -d dist --htmlmin -o dist/ourmission.html && usemin staff.html -d dist --htmlmin -o dist/staff.html && usemin whatwebelieve.html -d dist --htmlmin -o dist/whatwebelieve.html && usemin whyformedchurch.html -d dist --htmlmin -o dist/whyformedchurch.html && usemin js/intersection-observer.js -d dist -o dist/js/intersection-observer.js",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+  },
+  "author": "Andrew J Taylor",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.53.0",
+    "uglify-js": "^3.15.5"
+  }
+}
