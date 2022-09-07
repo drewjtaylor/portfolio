@@ -28,82 +28,53 @@
 
   </head>
   <body>
-    <h1>Welcome to My Portfolio!</h1>
-    <p>Come see my online workshop</p>
+    <h1 class="text-center mt-4">Welcome to My Portfolio!</h1>
+    <h4 class="text-center mb-5">Come see my online workshop</h4>
 
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2>Front-end</h2>
+            <h1>
+                <a href="https://drewjtaylor.github.io/qwixxboard-redux/">Qwixxx Scoreboard</a>
+              </h1>
+              <img class="img-fluid" src="/images/qwixx-screenshot.jpg">
+              <p>
+                Qwixxx is a dice game where players score points based off of multiple
+                dice rolls. Think Yahtzee-Plus.
+              </p>
+              <p>
+                The scoreboard was created using React, and the state is kept using Redux.
+                Since Redux technically stores a NEW complete state object, as opposed to
+                to updating an object, it was very easy to implement an undo/redo
+                function.
+              </p>
         </div>
         <div class="col">
-            <h2>Back-end</h2>
-        </div>
-        <div class="col">
-            <h2>Other</h2>
-        </div>
-    </div>
-</div>
-
-    <h1>
-      <a href="https://drewjtaylor.github.io/qwixxboard-redux/"
-        >Qwixxx Scoreboard</a
-      >
-    </h1>
-    <p>
-      Qwixxx is a dice game where players score points based off of multiple
-      dice rolls. Think Yahtzee-Plus.
-    </p>
-    <p>
-      The scoreboard was created using React, and the state is kept using Redux.
-      Since Redux technically stores a NEW complete state object, as opposed to
-      to updating an object, it was very easy to implement an undo/redo
-      function.
-    </p>
-
-    <h1><a href="https://formed-church.netlify.app/">Formed Church</a></h1>
+            <h1><a href="https://formed-church.netlify.app/">Formed Church</a></h1>
     <p>
       "Formed Church" is the first draft of a website created for a new church
       plant located in St. Petersburg, Florida. At this stage, I was learning
       Bootstrap, but had not yet learned much javascript, let alone React. This
       version is simply a collection of static pages.
     </p>
+        </div>
+        <div class="col">
+            <h1>
+                <a href="https://formation-church.netlify.app/">Formation Church</a>
+              </h1>
+              <p>
+                "<em>Formation</em> Church" was one step closer to what the church founder
+                visualized. In addition to updating the name of the church, this basic
+                website got a big update as well!
+              </p>
+              <p>
+                In addition to trying out a different style, this version introduced more
+                interactive features in the form of an events calendar.
+              </p>
+        </div>
+    </div>
+</div>
 
-    <h1>
-      <a href="https://formation-church.netlify.app/">Formation Church</a>
-    </h1>
-    <p>
-      <em>Formation</em> Church was one step closer to what the church founder
-      visualized. In addition to updating the name of the church, this basic
-      website got a big update as well!
-    </p>
-    <p>
-      In addition to trying out a different style, this version introduced more
-      interactive features in the form of an events calendar.
-    </p>
-    <p>
-      events: At a glance, this may look blank (depending on when I last added
-      events.) If you start adding some custom events of your own, you'll
-      observe the following functionality:
-    </p>
-    <ul>
-      <li>
-        <p>Old events do not appear (which is why it may appear blank)</p>
-      </li>
-      <li><p>Events will be displayed in order, oldest to newest.</p></li>
-      <li>
-        <p>
-          The form validates on the fly, letting the user know the title and
-          description are required.
-        </p>
-      </li>
-    </ul>
-    <p>
-      React-router <strong>(double-check name of package)</strong> was used to
-      set up routes.
-    </p>
-    <p>The problem with this site is it's all front end!</p>
-    <p>Cue node and mongo!</p>
     <h1>Node/Express</h1>
     <h1>MongoDB</h1>
   </body>
