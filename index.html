@@ -28,16 +28,17 @@
 
   </head>
   <body>
-    <h1 class="text-center my-4 pb-5 text-white">Welcome to My Portfolio!</h1>
+    <h1 class="text-center my-2 pb-5 text-white">Welcome to My Portfolio!</h1>
+    <h2 class="text-center my-1 pb-5 text-white"><a class="contact" href="./contact.html" style="">Contact Me</a></h2>
 
 <div class="container">
     <div class="row justify-content-around">
-        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
+        <div class="col-lg-5 col-10 mx-1 my-3 border zoom bg-white">
             <h1>
                 <a href="https://drewjtaylor.github.io/qwixxboard-redux/">Qwixxx Scoreboard</a>
               </h1>
-              <p>(React/Redux state management)</p>
-              <img class="img-fluid" src="/img/qwixx-screenshot.jpg">
+              <h4>React/Redux state management</h4>
+              <img class="img-fluid mx-auto d-block border shadow-sm" src="/img/qwixx-screenshot.jpg">
               <hr />
               <p>
                 Qwixxx is a dice game where players score points based off of multiple
@@ -51,50 +52,53 @@
               </p>
                             <p ><a href="https://github.com/drewjtaylor/qwixxboard-redux" target="_blank">See the code</a></p>
         </div>
-        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
+        <div class="col-lg-5 col-10 mx-1 my-3 border zoom bg-white">
             <h1><a href="https://formed-church.netlify.app/">Formed Church</a></h1>
-            <p>(Bootstrap-styled static website)</p>
-            <img class="img-fluid" src="/img/formed-church.jpg">
+            <h4>Bootstrap-styled static website</h4>
+            <img class="img-fluid mx-auto d-block border shadow-sm" src="/img/formed-church.jpg">
             <hr />
     <p>
       "Formed Church" is the first draft of a website created for a new church
       plant located in St. Petersburg, Florida. At this stage, I was learning
       Bootstrap, but had not yet learned much javascript, let alone React. This
-      version is simply a collection of static pages.
+      version is simply a collection of static pages with some animations and 
+      a contact form.
     </p>
                   <p ><a href="https://github.com/drewjtaylor/formed_church" target="_blank">See the code</a></p>
         </div>
-        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
+        <div class="col-lg-5 col-10 mx-1 my-3 border zoom bg-white">
             <h1>
                 <a href="https://formation-church.netlify.app/">Formation Church</a>
               </h1>
-              <p>(Static website updated with state management for events)</p>
-              <img class="img-fluid" src="/img/formation-church-events.jpg">
+              <h4>Static website updated with state management for events</h4>
+              <img class="img-fluid mx-auto d-block border shadow-sm" src="/img/formation-church-events.jpg">
               <hr />
               <p>
                 "<em>Formation</em> Church" was one step closer to what the church founder
-                visualized. In addition to updating the name of the church, the
+                visualized. Other than updating the name of the church from <em>Formed</em> Church to <em>Formation</em> Church, the
                 website got an update as well!
               </p>
               <p>
-                In addition to trying out a different style, this version introduced more
-                interactive features in the form of an events calendar. The form to enter 
+                In addition to trying a different visual style, this version introduced an 
+                interactive element in the form of an events calendar. The form to enter 
                 new events validates on the fly, and the event list displays all future events
-                in date order.
+                in date order. At this stage it uses dummy data, as it has not yet been connected to the back end...
               </p>
               <p ><a href="https://github.com/drewjtaylor/formation-church-react" target="_blank">See the code</a></p>
         </div>
-        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
+        <div class="col-lg-5 col-10 mx-1 my-3 border zoom bg-white">
             <h1>
                 <a href="https://github.com/drewjtaylor/formation-church-react">Node events server</a>
               </h1>
-              <p>(MongoDB database and server to support data for events and users)</p>
-              <img class="img-fluid" src="/img/formation-church-events.jpg">
+              <h4>MongoDB and Express server to support endpoints for events and users</h4>
+                <img class="img-fluid mx-auto d-block border shadow-sm" src="/img/events-postman.jpg">
               <hr />
               <p>
                 While not the easiest to visually demonstrate, developing the back end is what resonated with me the most.
+                Currently this isn't hosted anywhere and connected to a front end, but if you check back on this portfolio 
+                I hope to change that shortly!
               </p>
-              <p></p>
+              <p>In the meantime, this Express server can be tested by cloning it from github and using Insomnia or Postman to hit the various endpoints.</p>
               <p>
                 Full documentation for the APIs can be seen at the github link below.
               </p>

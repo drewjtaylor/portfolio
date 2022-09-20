@@ -11,3 +11,8 @@ body {
 .zoom:hover {
     transform: scale(1.05)
 }
+
+a.contact, a.contact:hover {
+    color: inherit;
+    text-decoration: none
+}
