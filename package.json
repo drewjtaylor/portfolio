@@ -12,7 +12,7 @@
     "lite": "lite-server",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin meetingtimes.html -d dist --htmlmin -o dist/meetingtimes.html && usemin ourmission.html -d dist --htmlmin -o dist/ourmission.html && usemin staff.html -d dist --htmlmin -o dist/staff.html && usemin whatwebelieve.html -d dist --htmlmin -o dist/whatwebelieve.html && usemin whyformedchurch.html -d dist --htmlmin -o dist/whyformedchurch.html && usemin js/intersection-observer.js -d dist -o dist/js/intersection-observer.js",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
