@@ -11,7 +11,7 @@
     "lite": "lite-server",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
