@@ -28,16 +28,17 @@
 
   </head>
   <body>
-    <h1 class="text-center mt-4">Welcome to My Portfolio!</h1>
-    <h4 class="text-center mb-5">Come see my online workshop</h4>
+    <h1 class="text-center my-4 pb-5 text-white">Welcome to My Portfolio!</h1>
 
 <div class="container">
-    <div class="row">
-        <div class="col">
+    <div class="row justify-content-around">
+        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
             <h1>
                 <a href="https://drewjtaylor.github.io/qwixxboard-redux/">Qwixxx Scoreboard</a>
               </h1>
+              <p>(React/Redux state management)</p>
               <img class="img-fluid" src="/images/qwixx-screenshot.jpg">
+              <hr />
               <p>
                 Qwixxx is a dice game where players score points based off of multiple
                 dice rolls. Think Yahtzee-Plus.
@@ -48,29 +49,57 @@
                 to updating an object, it was very easy to implement an undo/redo
                 function.
               </p>
+                            <p ><a href="https://github.com/drewjtaylor/qwixxboard-redux" target="_blank">See the code</a></p>
         </div>
-        <div class="col">
+        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
             <h1><a href="https://formed-church.netlify.app/">Formed Church</a></h1>
+            <p>(Bootstrap-styled static website)</p>
+            <img class="img-fluid" src="/images/formed-church.jpg">
+            <hr />
     <p>
       "Formed Church" is the first draft of a website created for a new church
       plant located in St. Petersburg, Florida. At this stage, I was learning
       Bootstrap, but had not yet learned much javascript, let alone React. This
       version is simply a collection of static pages.
     </p>
+                  <p ><a href="https://github.com/drewjtaylor/formed_church" target="_blank">See the code</a></p>
         </div>
-        <div class="col">
+        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
             <h1>
                 <a href="https://formation-church.netlify.app/">Formation Church</a>
               </h1>
+              <p>(Static website updated with state management for events)</p>
+              <img class="img-fluid" src="/images/formation-church-events.jpg">
+              <hr />
               <p>
                 "<em>Formation</em> Church" was one step closer to what the church founder
-                visualized. In addition to updating the name of the church, this basic
-                website got a big update as well!
+                visualized. In addition to updating the name of the church, the
+                website got an update as well!
               </p>
               <p>
                 In addition to trying out a different style, this version introduced more
-                interactive features in the form of an events calendar.
+                interactive features in the form of an events calendar. The form to enter 
+                new events validates on the fly, and the event list displays all future events
+                in date order.
               </p>
+              <p ><a href="https://github.com/drewjtaylor/formation-church-react" target="_blank">See the code</a></p>
+        </div>
+        <div class="col-xl-3 mx-1 my-3 border zoom bg-white">
+            <h1>
+                <a href="https://formation-church.netlify.app/">Node events server</a>
+              </h1>
+              <p>(MongoDB database and server to support data for events and users)</p>
+              <img class="img-fluid" src="/images/formation-church-events.jpg">
+              <hr />
+              <p>
+                While not the easiest to visually demonstrate, developing the back end is what resonated with me the most.
+              </p>
+              <p></p>
+              <p>
+                Full documentation for the APIs can be seen at the github link below.
+              </p>
+
+              <p ><a href="https://github.com/drewjtaylor/formation-church-react" target="_blank">See the code</a></p>
         </div>
     </div>
 </div>

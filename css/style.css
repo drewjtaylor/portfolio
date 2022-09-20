@@ -1,0 +1,13 @@
+body {
+    background-image: url('/images/body-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.05)
+}
