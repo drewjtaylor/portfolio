@@ -4,10 +4,9 @@
   "description": "A stylish introduction to the portfolio projects of Andrew Taylor",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copyfiles && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/webfonts && copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/webfonts",
-    "copyfiles": "copyfiles That-Man-Called-Jesus.pdf dist",
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "start": "npm run watch:all",
