@@ -20,3 +20,12 @@ a.inherit, a.inherit:hover {
 .project-display-card {
     background-color: #ececec!important;
 }
+
+.blue-box {
+    background-color: rgba(43, 71, 37, 0.863);
+    color: #ececec;
+}
+
+.title-font {
+    font-family: cinzel, serif
+}
